@@ -12,4 +12,11 @@ class AppManager implements IAppService {
     print('User name is : Jesus.');
     _service.log(date: DateTime.now().toIso8601String());
   }
+
+  @override
+  void logOut() {
+    print('Jesus logging out!');
+    _service.clearLog();
+    _service.log(date: DateTime.now().toIso8601String());
+  }
 }

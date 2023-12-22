@@ -5,4 +5,6 @@ import 'local_logger_manager.dart';
 void main(List<String> args) {
   IAppService appService = AppManager(service: LocalLoggerManager());
   appService.printUser();
+
+  appService.logOut();
 }
