@@ -9,5 +9,6 @@ void main(List<String> args) {
 
   String? name;
   // print(name.length);  /// hata verecektir cunku optional bir deger oldugu icin null,un uzunlugu yoktur!
+  // ignore: dead_code
   print(name?.length);
 }
